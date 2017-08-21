@@ -1,0 +1,155 @@
+html {
+	height: 100%;
+	background: radial-gradient(circle, #fff, #ccc);
+}
+
+#container {
+	height: 550px;
+	width: 600px;
+	background-color: #9dd2ea;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 10px;
+	display: flex;
+	flex-flow: column nowrap;
+	position: relative;
+}
+
+.tab-align {
+	display: flex;
+}
+
+.answer-align {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	width: 60%;
+}
+
+.score-align {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	width: 40%;
+}
+
+#score {
+	background-color: #f1ff92;
+	color: #888e5f;
+	padding: 5px;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+}
+
+#correct {
+	background-color: #42e252;
+	padding: 5px;
+	color: #fff;
+	width: 100px;
+	height: 50px;
+	display: none;
+	text-align: center;
+}
+
+#wrong {
+	left: 100px;
+	background-color: #de401a;
+	padding: 5px;
+	color: #fff;
+	width: 100px;
+	height: 50px;
+	display: none;
+	text-align: center;
+}
+
+#question {
+	margin: 10px 0;
+	width: 100%;
+	height: 200px;
+	color: #000;
+	background-color: #9da0ea;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+#question p{
+	font-size: 70px;
+}
+
+#instrucion {
+	margin: 10px 0 20px;
+	width: 100%;
+	height: 60px;
+	color: #000;
+	background-color: #b481d9;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.choices {
+	display: flex;
+	justify-content: space-between;
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	background-color: #fff;
+	cursor: pointer;
+	text-align: center;
+	line-height: 90px;
+	font-size: 24px;
+}
+
+.box:hover, #startrest:hover {
+	background-color: #9c89f6;
+}
+
+.box p{
+	line-height: 50px;
+	text-align: center;
+	font-size: 24px;
+}
+
+.startreset-align {
+	margin-top: 20px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#startreset {
+	width: 80px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 2px 20px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#timeremaining {
+	padding: 2px 20px;
+	text-align: center;
+	background-color: #ccd14c;
+	visibility: hidden;
+}
+
+#gameover {
+	text-align: center;
+	color: #fff;
+	font-size: 32px;
+	line-height: 60px;
+	padding-top: 40px;
+	position: absolute;
+	left: 40px;
+	top: 140px;
+	height: 260px;
+	width: 550px;
+	background: linear-gradient(#f3ca6b, #f3706c);
+	display: none;
+	text-transform: uppercase
+}
